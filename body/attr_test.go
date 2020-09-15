@@ -9,7 +9,7 @@ import (
 var b *Body
 
 func init() {
-	b = New(lib.BODY_API_KEY, lib.BODY_SECRET_KEY)
+	b = New(lib.BODY_API_KEY, lib.BODY_SECRET_KEY, nil)
 }
 
 func TestBody_Attr(t *testing.T) {
