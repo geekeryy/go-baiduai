@@ -17,9 +17,9 @@ type Face struct {
 }
 
 // New .
-func New(appKey string, appSecret string) *Face {
+func New(appKey string, appSecret string, store lib.Storage) *Face {
 	return &Face{
-		Token: lib.NewToken(appKey, appSecret),
+		Token: lib.NewToken(appKey, appSecret, store),
 	}
 }
 

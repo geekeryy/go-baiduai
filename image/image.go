@@ -33,9 +33,9 @@ type Image struct {
 }
 
 // New .
-func New(appKey string, appSecret string) *Image {
+func New(appKey string, appSecret string, store lib.Storage) *Image {
 	return &Image{
-		Token: lib.NewToken(appKey, appSecret),
+		Token: lib.NewToken(appKey, appSecret, store),
 	}
 }
 

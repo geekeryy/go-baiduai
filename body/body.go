@@ -33,9 +33,9 @@ type Body struct {
 }
 
 // New .
-func New(appKey string, appSecret string) *Body {
+func New(appKey string, appSecret string, store lib.Storage) *Body {
 	return &Body{
-		Token: lib.NewToken(appKey, appSecret),
+		Token: lib.NewToken(appKey, appSecret, store),
 	}
 }
 
