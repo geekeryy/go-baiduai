@@ -2,14 +2,14 @@ package body
 
 import (
 	"fmt"
-	go_baiduai "github.com/comeonjy/go-baiduai"
+	"github.com/comeonjy/go-baiduai/lib"
 	"testing"
 )
 
 var b *Body
 
 func init() {
-	b = New(go_baiduai.BODY_API_KEY, go_baiduai.BODY_SECRET_KEY)
+	b = New(lib.BODY_API_KEY, lib.BODY_SECRET_KEY)
 }
 
 func TestBody_Attr(t *testing.T) {

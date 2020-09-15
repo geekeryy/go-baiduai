@@ -1,2 +1,2 @@
 .idea
-constant.go
+lib/constant.go

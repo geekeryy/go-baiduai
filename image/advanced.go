@@ -1,4 +1,4 @@
-package body
+package image
 
 import "net/url"
 

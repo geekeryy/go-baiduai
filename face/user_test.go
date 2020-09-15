@@ -3,12 +3,12 @@ package face
 import (
 	"encoding/base64"
 	"fmt"
-	go_baiduai "github.com/comeonjy/go-baiduai"
+	"github.com/comeonjy/go-baiduai/lib"
 	"io/ioutil"
 	"testing"
 )
 
-var f = New(go_baiduai.FACE_APP_KEY, go_baiduai.FACE_APP_SECRET)
+var f = New(lib.FACE_APP_KEY, lib.FACE_APP_SECRET)
 
 var reg = &Register{
 	//Image:           "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573837226842&di=311e9cb79691395e0c6243b9b4751b96&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn10104%2F719%2Fw358h361%2F20181223%2Fea63-hqqzpku4309788.bmp",
